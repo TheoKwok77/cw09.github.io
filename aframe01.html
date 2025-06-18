@@ -9,7 +9,7 @@
 <body>
     <a-scene>
         <a-assets>
-            <img id="brick" src="img/b1.jpg">
+            <img id="brick" src="b1.jpg">
 
 
         </a-assets>
@@ -23,7 +23,7 @@
     </a-scene>
     <script>
         setTimeout((e)=>{
-            const texture = new window.THREE.TextureLoader().load('img/b1.jpg');
+            const texture = new window.THREE.TextureLoader().load('b1.jpg');
             const material_tex = new THREE.MeshBasicMaterial({map:texture});
                 const box = document.querySelector('#cubrick');
                 let mesh = box.getObject3D('mesh');
